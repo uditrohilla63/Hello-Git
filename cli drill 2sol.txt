@@ -1,0 +1,54 @@
+# Question 1 
+wget https://raw.githubusercontent.com/bobdeng/owlreader/master/ERead/assets/books/Harry%20Potter%20and%20the%20Goblet%20of%20Fire.txt
+# Question 2
+head -3 "Harry Potter and the Goblet of fire.txt"   //To print no. of lines from start
+# Question 3
+tail -10 "Harry Potter and the Goblet of fire.txt"   //To print no. of lines from end
+# Question 4
+grep Harry "Harry Potter and the Goblet of fire.txt" | wc -w  //To print no. of times a word occurs 
+grep Ron "Harry Potter and the Goblet of fire.txt" | wc -w
+grep Hermione "Harry Potter and the Goblet of fire.txt" | wc -w
+grep Dumbledore "Harry Potter and the Goblet of fire.txt" | wc -w
+# Question 5
+sed -n '100,200p' "Harry Potter and the Goblet of fire.txt"  // To print lines in given range // 
+# Question 6
+tr ' ' '\n' < "Harry Potter and the Goblet of fire.txt" | sort | uniq -c | wc -l  //To print unique words
+
+## Process/ports
+# Question 1
+ps -ef       //pid and ppid
+# Question 2
+kill <pid>    //To stop process from browser
+# Question 3
+top -b -o +%CPU | head -n 3
+# Question 4
+top -b -o +%MEM | head -n 3
+# Question 5
+python -m SimpleHTTPServer 8000 //To start python server
+# Question 6
+ps -ef --> kill <pid> // to kill running process 
+# Question 7
+sudo python -m SimpleHTTPServer 90
+# Question 8
+netstat -na   //To see active connections
+ss
+lsof -i TCP/lsof -i UDP
+# Question 9
+lsof –i :<portnumber>
+
+## Managing Software
+# Question 1
+sudo apt install htop //To install htop
+sudo apt install vim  //To install vim
+sudo apt install nginx  //To install nginx
+# Question 2
+sudo apt-get purge nginx nginx-common //uninstall nginx
+
+## Misc
+# Question 1
+ip a //Local ip address
+# Question 2
+nslookup google.com
+# Question 3
+whereis node
+whereis code

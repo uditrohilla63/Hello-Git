@@ -1,0 +1,47 @@
+Git -> It is basically a version control system its a kind of software 
+(git basically ek tool ha basically they save the changes of code ) 
+there are certain areas like stagging area and commit
+
+Their are certain areas in the git
+Untracked area - git does not know about your file
+unmodified area - we have already commit the file and if we change the file then it go to the modified area
+Modified area - if we have modief some file then git says pz stagged the file and commit the changes.
+Stagged area - In this area all the files are in stagged area and ready for commit.
+
+1.For intialising the repository command - git init
+2. to view all hidden folders command - ls -lart
+3. to commit all the file command - git add -A (it will add all files to stagged area)
+4. git checkout filename -> this command will revert back the changes to the original file before the change.
+git checkout -f -> it will recover previously change to all the files.
+git log -> this command will tell the commit history that we have made
+git log -p -1 -> this command will show 1s command history changes and press q for exit.
+git diff --> this command compare the working directory with staging area and also reflect the changes.
+git diff --staged --> it will compare the stagged area with the last commit and reflect the changes.
+git commit -a -m "skipped the stagged area and fixed <" --> here i directly commit the file without adding into stagged area.
+git rm waste.html - This command basically delete the files from working directory and stagged area.
+git rm --cached waste.html --> this command basically remove the tracking the file and moves to untracked file section but file is present in the working directory.
+
+git status -s --> it is short hand command for viewing the git status of file
+
+git status -s
+ M about.html
+ M contact.html
+M  index.html
+
+here 1st box of m i.e green color denote staging area
+here 2nd box of m i.e red color denote  working area
+
+.gitignore --> .gitignore file will ignore all the files which are mention in .gitignore
+in .gitignore --> we mention file name or folder that should be ignore
+like foldername/ --> indicate this whole folder should be ignore
+like *.txt --> this indicate all the file extension .txt should be ignore
+like /filename --> this indicate it should ignore this file in current directory
+
+
+########################################################################################
+Branches --> using the branch we can create own copy of the repo so that it should affect the production repo means their is no affect on the master branch
+example we can create feature branch 
+
+
+
+
